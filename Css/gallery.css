@@ -132,7 +132,7 @@ body.overlay .footer{
 /* MOBILE */
 @media screen and (max-width: 425px) {
     .max-width-container{
-        margin: 0 24px;
+        margin: 32px 24px;
     }
 
     .gallery-section .image-container{

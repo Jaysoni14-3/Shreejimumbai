@@ -328,6 +328,18 @@ section .section-body{
     .hamburger-menu-icon-container{
         display: block;
     }
+    .navigation-bar.show .hamburger-menu-icon{
+        display: none;
+    }
+
+    .hamburger-menu-icon-close{
+        display: none;
+    }
+    .navigation-bar.show .hamburger-menu-icon-close{
+        display: block;
+    }
+
+
     .links-button-container{
         display: none;
         position: absolute;
@@ -349,11 +361,14 @@ section .section-body{
         justify-content: end;
         align-items: end;
         margin-left: auto;
+        margin-block: var(--margin-8px);
     }
     .nav-links .nav-link-item {
         margin-right: 0;
         margin-bottom: 8px;
         padding: 8px;
+        width: 90%;
+        text-align: right;
     }
 
 
@@ -427,6 +442,16 @@ section .section-body{
         font-size: 12px;
     }
 
+    .breadcrumb a, span{
+        text-transform: uppercase;
+        font-weight: var(--font-semi-bold);
+        font-size: 12px;
+        letter-spacing: 0.06em;
+    }
+
+    .company-details{
+        width: 90%;
+    }
 
    
 
@@ -452,6 +477,10 @@ section .section-body{
 
     .footer-details{
         flex-direction: column;
+    }
+
+    .company-details{
+        width: 100%;
     }
 
     .social-links{

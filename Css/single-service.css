@@ -10,6 +10,14 @@
     flex-direction: column;
 }
 
+.single-service-section .breadcrumb .breadcrumb-seperator{
+    display: none;
+}
+
+.single-service-section .breadcrumb .current-page{
+    display: none;
+}
+
 .single-service-section .container{
     display: flex;
 }
