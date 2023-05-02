@@ -1,0 +1,170 @@
+@import url(../root.css);
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.single-service-section{
+    margin: 48px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-service-section .container{
+    display: flex;
+}
+
+.header-text{
+    text-align: center;
+}
+
+.service-name{
+    text-align: start;
+}
+
+.service-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: var(--margin-48px);
+    width: 50%;
+}
+
+.single-service-section .service-description p{
+    margin-bottom: var(--margin-8px);
+}
+
+.single-service-section .service-description p:last-child{
+    margin-bottom: 0;
+}
+
+.service-image-container img{
+    border-radius: var(--border-radius-8px);
+}
+
+
+/* ADDITIONAL SERVICES */
+.additional-services-section{   
+    margin: 48px auto;
+}
+
+.additional-services-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.additional-services-column{
+    width: calc(100%/3 - 24px);
+    padding-inline: 16px;
+    margin-bottom: var(--margin-24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column-header{
+    margin-bottom: var(--margin-16px);
+}
+
+.column-header h4{
+    color: var(--neutral-900);
+    font-weight: var(--font-semi-bold);
+}
+
+.service-item{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: var(--margin-8px);
+}
+.service-item:last-child{
+    margin-bottom: 0;
+}
+
+.service-item-icon{
+    width: 24px;
+    margin-right: var(--margin-16px);
+}
+
+.service-item .service-text{
+    color: var(--primary-700);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+@media screen and (max-width: 1120px) {
+    .max-width-container{
+        margin: 48px 60px;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+    .additional-services-column{
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .additional-services-column{
+        width: calc(100%/2 - 24px);
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    .max-width-container{
+        margin: 48px 60px;
+    }
+
+    .single-service-section .container{
+        flex-direction: column-reverse;
+    }
+
+    .service-text-container{
+        width: 100%;
+        margin-right: 0;
+        margin-top: var(--margin-24px);
+    }
+
+    .service-image-container{
+        width: 100%;
+    }
+
+    .our-service-card{
+        width: calc(100%/2 - 24px);
+    }
+
+    .additional-services-column{
+        width: calc(100%/2 - 24px);
+    }
+
+    .service-image-container img{
+        width: 100%;    
+    }
+    
+}
+
+
+@media screen and (max-width: 550px) {
+    .additional-services-column{
+        width: calc(100%/2 - 8px);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 490px) {
+
+    .max-width-container{
+        margin: 32px 24px;
+    }
+
+    .additional-services-column{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600&display=swap');
+
+@import url(./root.css);
+
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: var(--font-regular);
+}
+h1{
+    font-size: 40px;
+    line-height: 48px;
+}
+h2{
+    font-size: 32px;
+    color: var(--neutral-900);
+    line-height: 40px;
+}
+h3{
+    font-size: 24px;
+    line-height: 32px;
+}
+h4{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+p{
+    line-height: 24px;
+}
+
+.small-header{
+    font-size: 14px;
+    font-weight: var(--font-bold);
+    font-family: var(--font-lato);
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-900);
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    width: 100vw;
+    margin: 0 auto;
+    overflow-x: hidden;
+    /* max-width: 1440px; */
+}
+
+.noScroll-body{
+    overflow: hidden;
+} 
+
+.max-width-container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.section-container{
+    background-color: var(--neutral-50);    
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+img{
+    max-width: 100%;
+}
+
+button,
+.button{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: var(--font-regular);
+    font-family: var(--font-montserrat);
+    border-radius: var(--border-radius-8px);
+    transition: background-color ease-out 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img{
+    margin-left: 4px;
+}
+
+.primary-button{
+    background-color: var(--primary-700);
+    color: var(--neutral-50);
+}
+.primary-button:hover{
+    background-color: var(--primary-500);
+}
+
+.secondary-button{
+    background-color: transparent;
+    border: 1px solid var(--primary-700);
+    color: var(--primary-700);
+    transition: border-color ease-out 300ms,
+                color ease-out 300ms;
+    cursor: pointer;
+}
+
+.secondary-button:hover{
+    border-color: var(--primary-500);
+    color: var(--primary-500);
+}
+
+
+/* Navigation */
+.navigation-bar{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 60px;
+    position: sticky;
+    top: 0;
+    background-color: var(--neutral-50);
+    z-index: 99;
+}
+
+.logo-container{
+    width: 145px;
+    height: 40px;
+    margin-right: auto;
+}
+.logo-container .shreeji-logo{
+    width: 100%;
+}
+
+.links-button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links .nav-link-item{
+    margin-right: var(--margin-24px);
+    padding: 8px;
+}
+
+.nav-links .nav-link-item:last-child{
+    margin-right: 0;
+}
+
+.nav-link-item .nav-link{
+    color: var(--neutral-500);
+}
+.nav-link-item .nav-link.active-nav-link{
+    color: var(--neutral-900);
+}
+
+.nav-cta{
+    margin-left: auto;
+}
+
+/* SECTIONS */
+section .section-header .header-text{
+    margin-top: var(--margin-8px);
+    margin-bottom: var(--margin-16px);
+}
+
+section .section-body{
+    margin-bottom: var(--margin-32px);
+}
+
+
+/* BREADCRUMB */
+.breadcrumb{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.breadcrumb a, span{
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+    font-size: 14px;
+    letter-spacing: 0.06em;
+}
+
+.breadcrumb-seperator{
+    margin-inline: 6px;
+    color: var(--neutral-500);
+}
+
+.previous-page, .current-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous-page a{
+    margin-left: 4px;
+    color: var(--neutral-500);
+}
+
+.current-page span{
+    color: var(--black);
+}
+
+.hamburger-menu-icon-container{
+    display: none;
+}
+
+/* FOOTER  */
+.footer{
+    padding: 24px 48px;
+    background-color: var(--primary-900);
+    color: var(--neutral-50);
+}
+
+.company-details-and-links{
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+.footer-details{
+    padding-inline: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.company-details{
+    width: 250px;
+    margin-right: auto;
+}
+
+.footer-logo-container{
+    width: 185px;
+    height: 50px;
+    margin-bottom: var(--margin-16px);
+}
+
+.footer-logo-container .footer-logo{
+    width: 100%;
+    height: 100%;
+}
+
+.company-information-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--margin-16px);
+
+}
+
+.company-information-item:last-child{
+    margin-bottom: 0;
+}
+
+.item-icon-container{
+    width: 24px;
+    height: 24px;
+    margin-right: var(--margin-16px);
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.footer-link-item{
+    padding: 8px;
+    margin-right: var(--margin-16px);
+}
+
+.footer-link-item:last-child{
+    margin-right: 0;
+}
+
+.footer-link{
+    color: var(--neutral-50);
+}
+
+.social-links h4{
+    color: var(--neutral-50);
+}
+
+.social-link-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-24px);
+}
+
+.social-link-item{
+    color: var(--neutral-400);
+    margin-bottom: var(--margin-16px);
+}
+.social-link-item:last-child{
+    margin-bottom: 0;
+}
+
+.copyright-text{
+    text-align: center;
+    margin-top: var(--margin-16px);
+}
+
+
+
+@media screen and (max-width: 945px) {
+    /* HAMBURGER MENU */
+    .hamburger-menu-icon-container{
+        display: block;
+    }
+    .links-button-container{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 48px;
+        padding-bottom: 48px;
+        background-color: white;
+        z-index: 1000;
+        top: 48px;
+        left: 0;
+        right: 0;
+    }
+    .navigation-bar.show .links-button-container{
+        display: block;
+    }
+    .nav-links{
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        margin-left: auto;
+    }
+    .nav-links .nav-link-item {
+        margin-right: 0;
+        margin-bottom: 8px;
+        padding: 8px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-details{
+        padding: 0;
+    }
+
+    .company-details{
+        margin-bottom: var(--margin-16px);
+    }
+
+    .company-details-and-links{
+        flex-direction: column;
+        margin-bottom: var(--margin-16px);
+    }
+
+    .footer-links{
+        margin-top: var(--margin-16px);
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer-link-item {
+        padding: 8px;
+        margin-right: 0;
+        width: calc(100%/2);
+    }
+
+    .social-link-container{
+        width: 120px;
+    }
+}
+
+
+/* TAB */
+@media screen and (max-width: 830px) {
+
+    h4{
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+
+    .max-width-container{
+        margin: 0 60px;
+    }
+
+    h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    h4{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    p{
+        line-height: 24px;
+    }
+    
+    .small-header{
+        font-size: 12px;
+    }
+
+
+   
+
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 425px) {
+
+    /* NAVBAR */
+    .navigation-bar{
+        padding: 4px 24px;
+    }
+    .links-button-container{
+        padding-right: 24px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 24px;
+    }
+
+    .footer-details{
+        flex-direction: column;
+    }
+
+    .social-links{
+        padding: 8px;
+        width: 100%;
+    }
+
+}

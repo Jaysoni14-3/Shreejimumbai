@@ -1,0 +1,122 @@
+@import url(../root.css);
+
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    margin: 48px auto;
+}
+
+.section-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-text-container,
+.contact-image-container{
+    width: 50%;
+}
+
+.contact-text-container{
+    margin-right: var(--margin-24px);
+}
+
+.contact-section .company-desciption,
+.contact-section .contact-information{
+    margin-bottom: 24px;
+}
+
+.company-desciption h2{
+    margin-bottom: var(--margin-24px);
+    color: var(--neutral-900);
+}
+
+.contact-information-item{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: var(--margin-24px);
+}
+
+.contact-information-item:last-child{
+    margin-bottom: 0;
+}
+
+.contact-information-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: var(--margin-16px);
+}
+
+.social-icons h4{
+    font-weight: var(--font-semi-bold);
+    color: var(--neutral-900);
+    margin-bottom: var(--margin-16px);
+}
+
+.contact-image-container img{
+    width: 100%;
+}
+
+.icons-wrapper{
+    display: flex;
+}
+
+.icons-wrapper .icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--margin-16px);
+}
+.icons-wrapper .icon-container:last-child{
+    margin-right: 0;
+}
+
+.contact-social-icon{
+    padding: 8px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .max-width-container{
+        margin: 48px 60px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .max-width-container{
+        margin: 48px 60px;
+    }
+    
+    .container{
+        margin-top: var(--margin-16px);
+        flex-direction: column-reverse;
+    }
+    
+    .contact-text-container,
+    .contact-image-container{
+        width: 100%;
+    }
+    
+    .contact-text-container{
+        margin-right: 0;
+    }
+    .company-desciption h2{
+        margin-block: var(--margin-24px);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 425px) {
+
+    .max-width-container{
+        margin: 32px 24px;
+    }
+
+}
