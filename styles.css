@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: var(--font-regular);
@@ -97,6 +101,31 @@ button img{
     margin-left: 4px;
 }
 
+button i{
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+#Scroll_to_top {
+    display: none; 
+    position: fixed; 
+    bottom: 24px;
+    right: 24px;
+    z-index: 10000;
+    border: none;
+    outline: none;
+    background-color: var(--primary-700);
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: var(--border-radius-50);
+}
+
+
+#Scroll_to_top i{
+    margin-left: 0;
+}
+
 .primary-button{
     background-color: var(--primary-700);
     color: var(--neutral-50);
@@ -136,8 +165,11 @@ button img{
 
 .logo-container{
     width: 145px;
-    height: 40px;
+    height: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-container .shreeji-logo{
     width: 100%;
@@ -174,6 +206,7 @@ button img{
 
 .nav-cta{
     margin-left: auto;
+    width: max-content;
 }
 
 /* SECTIONS */
@@ -199,6 +232,11 @@ section .section-body{
     font-weight: var(--font-semi-bold);
     font-size: 14px;
     letter-spacing: 0.06em;
+}
+
+.breadcrumb i{
+    font-size: 12px;
+    color: var(--neutral-500);
 }
 
 .breadcrumb-seperator{
@@ -251,8 +289,8 @@ section .section-body{
 }
 
 .footer-logo-container{
-    width: 185px;
-    height: 50px;
+    width: 145px;
+    height: auto;
     margin-bottom: var(--margin-16px);
 }
 
@@ -335,6 +373,7 @@ section .section-body{
     /* HAMBURGER MENU */
     .hamburger-menu-icon-container{
         display: block;
+        font-size: 18px;
     }
     .navigation-bar.show .hamburger-menu-icon{
         display: none;
@@ -342,9 +381,11 @@ section .section-body{
 
     .hamburger-menu-icon-close{
         display: none;
+        font-size: 0;
     }
     .navigation-bar.show .hamburger-menu-icon-close{
         display: block;
+        font-size: 18px;
     }
 
 

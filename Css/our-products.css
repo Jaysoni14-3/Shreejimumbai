@@ -34,6 +34,10 @@
     padding: 8px 8px 16px 8px;
 }
 
+.product-name{
+    margin-bottom: auto;
+}
+
 .product-details .product-name h4{
     font-weight: var(--font-regular);
     color: var(--neutral-800);
@@ -53,19 +57,22 @@
     font-weight: var(--font-regular);
 }
 
-.product-details .primary-button img{
-    margin-left: 8px;
-}
 
 .product-image{
     height: 190px;
     padding-top: 8px; 
+    margin-bottom: var(--border-radius-16px);
     flex: 1;
 }
+
 .product-image img{
     height: 100%;
     width: 100%;
     border-radius: var(--border-radius-8px);
+}
+
+.product-card .primary-button i{
+    margin-left: 8px;
 }
 
 

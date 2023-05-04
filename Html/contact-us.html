@@ -7,6 +7,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../Css/contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -16,8 +17,8 @@
             <a href="../index.html"><img class="shreeji-logo" src="../Images/Shreeji_logo.png" alt="SHREEJI"></a>
         </div>
         <div class="hamburger-menu-icon-container">
-            <img src="../Images/icons/Hamburger-menu-icon.png" class="hamburger-menu-icon" alt="Hamburger-menu-icon">
-            <img src="../Images/icons/Close-icon.png" class="hamburger-menu-icon-close" alt="Hamburger-menu-icon">
+            <i class="fa-solid fa-bars hamburger-menu-icon"></i>
+            <i class="fa-solid fa-xmark hamburger-menu-icon-close"></i>
         </div>
         <div class="links-button-container">
             <nav class="nav-links">
@@ -49,7 +50,7 @@
         <div class="section-header">
             <div class="breadcrumb">
                 <div class="previous-page">
-                    <img src="../Images/icons/Arrow-left.png" class="arrow-left" alt="arrow-left">
+                    <i class="fa-solid fa-arrow-left"></i>
                     <a href="../index.html">Home</a>
                 </div>
                 <span class="breadcrumb-seperator">/</span>
@@ -69,19 +70,19 @@
                     <div class="contact-information">
                         <div class="address-container contact-information-item">
                             <a class="contact-information-item" target="_blank" href="https://www.google.com/maps/place/19%C2%B015'31.6%22N+72%C2%B051'47.5%22E/@19.258786,72.863188,17z/data=!3m1!4b1!4m4!3m3!8m2!3d19.258786!4d72.863188">
-                                <img src="../Images/icons/Location-icon.png" class="contact-information-icon" alt="address-icon">
+                                <i class="fa-solid fa-location-dot contact-information-icon"></i>
                                 <p class="company-address">CS link road, Anand Nagar, Dahisar east.</p>
                             </a>
                         </div>
                         <div class="email-container contact-information-item">
                             <a href="mailto:mayank@testgmail.com" class="contact-information-item">
-                                <img src="../Images/icons/Mail-icon.png" class="contact-information-icon" alt="mail-icon">
+                                <i class="fa-solid fa-envelope contact-information-icon"></i>
                                 <p class="company-email">shreeji@gmail.com</p>
                             </a>
                         </div>
                         <div class="phone-container contact-information-item">
                             <a href="tel:+91 8693891336" class="contact-information-item">
-                                <img src="../Images/icons/Phone-icon.png" class="contact-information-icon" alt="phone-icon">
+                                <i class="fa-solid fa-phone contact-information-icon"></i>
                                 <p class="company-phone">+91 86938 91336</p>
                             </a>
                         </div>
@@ -90,13 +91,13 @@
                         <h4>Find us on</h4>
                         <div class="icons-wrapper">
                             <div class="icon-container">
-                                <img src="../Images/icons/Social-icons/Facebook-logo-blue.png" class="facebook-icon contact-social-icon" alt="facebook-icon">
+                                <i class="fa-brands fa-facebook-f contact-social-icon" style="color: #0E74BE"></i>
                             </div>
                             <div class="icon-container">
-                                <img src="../Images/icons/Social-icons/Instagram-logo-blue.png" class="instagram-icon contact-social-icon" alt="instagram-icon">
+                                <i class="fa-brands fa-instagram contact-social-icon" style="color: #0E74BE"></i>
                             </div>
                             <div class="icon-container">
-                                <img src="../Images/icons/Social-icons/Youtube-logo-blue.png" class="youtube-icon contact-social-icon" alt="youtube-icon">
+                                <i class="fa-brands fa-youtube contact-social-icon" style="color: #0E74BE"></i>
                             </div>
                         </div>
                     </div>
@@ -122,7 +123,7 @@
                         <div class="company-information-item">
                             <a class="company-information-item" href="https://www.google.com/maps/place/19%C2%B015'31.6%22N+72%C2%B051'47.5%22E/@19.258786,72.863188,17z/data=!3m1!4b1!4m4!3m3!8m2!3d19.258786!4d72.863188">
                                 <div class="item-icon-container">
-                                    <img src="../Images/icons/Location-icon-white.png" alt="">
+                                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
                                 </div>
                                 <div class="address-text">
                                     <p>CS link road, Anand Nagar, Dahisar east.</p>
@@ -132,7 +133,7 @@
                         <div class="company-information-item">
                             <a href="mailto:mayank@testgmail.com" class="company-information-item">
                                 <div class="item-icon-container">
-                                    <img src="../Images/icons/Mail-icon-white.png" alt="">
+                                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                                 </div>
                                 <div class="email-text">
                                     <p>mayank@gmail.com</p>
@@ -142,7 +143,7 @@
                         <div class="company-information-item">
                             <a href="tel:+91 8693891336" class="company-information-item">
                                 <div class="item-icon-container">
-                                    <img src="../Images/icons/Phone-icon-white.png" alt="">
+                                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                                 </div>
                                 <div class="phone-text">
                                     <p>+91 86938 91336</p>
@@ -187,6 +188,8 @@
         </div>
     </footer>
     
+    <button onclick="topFunction()" id="Scroll_to_top" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
 </body>
 
 <script src="../script.js"></script>

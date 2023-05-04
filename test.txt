@@ -1,0 +1,42 @@
+down chevron-arrow
+
+<i class="fa-solid fa-chevron-down"></i>
+<i class="fa-solid fa-chevron-up"></i>
+
+
+arrow right
+<i class="fa-solid fa-arrow-right"></i>
+
+
+arrow left
+<i class="fa-solid fa-arrow-left"></i>
+
+
+
+HEADER
+<i class="fa-solid fa-bars hamburger-menu-icon"></i>
+<i class="fa-solid fa-xmark hamburger-menu-icon-close"></i>
+
+
+FOOTER 
+<i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+<i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+<i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+
+
+
+
+Facebook
+
+<i class="fa-brands fa-facebook-f"></i>
+
+
+instagram
+
+<i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+
+
+twitter
+
+<i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+

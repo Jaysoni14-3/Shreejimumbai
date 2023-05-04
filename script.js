@@ -20,3 +20,21 @@ hamburgerIcon.addEventListener("click", function(){
         body.classList.add("noScroll-body");
     }
 });
+
+
+
+let scrollUp = document.getElementById("Scroll_to_top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+      scrollUp.style.display = "block";
+    } else {
+      scrollUp.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

@@ -1,9 +1,9 @@
-var service_details = [
-    {
-        serviceName: "Pool Cleaning",
-        serviceImage: "../Images/single-service-image.png",
-    },
-];
+// var service_details = [
+//     {
+//         serviceName: "Pool Cleaning",
+//         serviceImage: "../Images/single-service-image.png",
+//     },
+// ];
 
 var currentURL = window.location.href;
 var currentID = currentURL.split('?id=')[1];

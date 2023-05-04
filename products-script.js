@@ -58,12 +58,9 @@ for(let i = 0; i < products.length; i++){
                                     <div class="product-name mb-8">
                                         <h4>${productName}</h4>
                                     </div>
-                                    <div class="product-price">
-                                        <img src="../Images/icons/Rupee-icon.png" class="ruppee-icon" alt="ruppee-icon">
-                                        <p>${productPrice}</p>
-                                    </div>
+                                  
                                     
-                                    <a href="tel:+91 8693891336" class="button primary-button">Call us <img src="../Images/icons/Phone-icon-white.png" alt="phone-icon"></a>
+                                    <a href="tel:+91 8693891336" class="button primary-button">Call us <i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
                                 </div>
                             </div> `;
         
@@ -74,3 +71,8 @@ for(let i = 0; i < products.length; i++){
 
 
 {/* <button class="primary-button">Call us <img src="../Images/icons/Phone-icon-white.png" alt="phone-icon"></button> */}
+
+{/* <div class="product-price">
+<img src="../Images/icons/Rupee-icon.png" class="ruppee-icon" alt="ruppee-icon">
+<p>${productPrice}</p>
+</div> */}

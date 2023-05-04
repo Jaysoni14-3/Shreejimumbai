@@ -122,7 +122,7 @@ for(var i = 0; i < poolMaintainanceProducts.length; i++){
     
     var poolServiceItemHTML = `
         <div class="service-item cursor-pointer" id=${serviceId}>
-            <img src="../Images/icons/Arrow-right.png" class="service-item-icon" alt="Right arrow">
+            <i class="fa-solid fa-arrow-right service-item-icon" style="color: #0E74BE"></i>
             <p class="service-text">${serviceName}</p>
         </div> `;
 
@@ -137,7 +137,7 @@ for(var i = 0; i < accessoriesAndServices.length; i++){
     
     var accessoryServiceItemHTML = `
         <div class="service-item cursor-pointer" id=${serviceId}>
-            <img src="../Images/icons/Arrow-right.png" class="service-item-icon" alt="Right arrow">
+            <i class="fa-solid fa-arrow-right service-item-icon" style="color: #0E74BE"></i>
             <p class="service-text">${serviceName}</p>
         </div> `;
 
@@ -152,7 +152,7 @@ for(var i = 0; i < repairAndCleaning.length; i++){
     
     var repairServiceItemHTML = `
         <div class="service-item cursor-pointer" id=${serviceId}>
-            <img src="../Images/icons/Arrow-right.png" class="service-item-icon" alt="Right arrow">
+            <i class="fa-solid fa-arrow-right service-item-icon" style="color: #0E74BE"></i>
             <p class="service-text">${serviceName}</p>
         </div> `;
 

@@ -7,6 +7,7 @@
     <title>Shreeji</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./Css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head> 
 <body>
 
@@ -16,8 +17,8 @@
             <a href="./index.html"><img class="shreeji-logo" src="./Images/Shreeji_logo.png" alt="SHREEJI"></a>
         </div>
         <div class="hamburger-menu-icon-container">
-            <img src="./Images/icons/Hamburger-menu-icon.png" class="hamburger-menu-icon" alt="Hamburger-menu-icon">
-            <img src="./Images/icons/Close-icon.png" class="hamburger-menu-icon-close" alt="Hamburger-menu-icon">
+            <i class="fa-solid fa-bars hamburger-menu-icon"></i>
+            <i class="fa-solid fa-xmark hamburger-menu-icon-close"></i>
         </div>
         <div class="links-button-container">
             <nav class="nav-links">
@@ -87,7 +88,7 @@
                 <img src="./Images/about-us-image-3.png" class="about-us-image" alt="about-us-image">
             </div>
         </div>
-        <button id="about_us_button" class="button secondary-button">Learn More <img src="./Images/icons/Arrow-right.png" class="button-arrow-icon" alt="right-arrow"></button>
+        <button id="about_us_button" class="button secondary-button">Learn More <i class="fa-solid fa-arrow-right"></i></button>
     </section>
 
     <!-- OUR SERVICES -->
@@ -155,7 +156,32 @@
                     </div>
                 </div>
             </div>
-            <button id="our_services_button" class="button secondary-button">Explore Services <img src="./Images/icons/Arrow-right.png" class="button-arrow-icon" alt="right-arrow"></button>
+            <button id="our_services_button" class="button secondary-button">Explore Services <i class="fa-solid fa-arrow-right"></i></button>
+        </section>
+    </div>
+
+
+    <!-- OUR CLIENTS -->
+    <div class="section-container">
+        <section class="our-clients-section max-width-container">
+            <div class="section-header">
+                <span class="small-header">Our Clients</span>
+                <h2 class="header-text">Our Valuable clients</h2>
+            </div>
+            <div class="section-body client-container">
+                <div class="client-image-container">
+                    <img src="./Images/client-1.png" class="client-image" alt="">
+                </div>
+                <div class="client-image-container">
+                    <img src="./Images/client-2.png" class="client-image" alt="">
+                </div>
+                <div class="client-image-container">
+                    <img src="./Images/client-3.png" class="client-image" alt="">
+                </div>
+                <div class="client-image-container">
+                    <img src="./Images/client-4.png" class="client-image" alt="">
+                </div>
+            </div>
         </section>
     </div>
 
@@ -179,7 +205,7 @@
                 <div class="gallery-image-container">
                     <img src="./Images/Gallery-images/gallery-image-4.png" class="gallery-image" alt="">
                 </div>
-                <div class="gallery-image-container">
+                <!-- <div class="gallery-image-container">
                     <img src="./Images/Gallery-images/gallery-image-5.png" class="gallery-image" alt="">
                 </div>
                 <div class="gallery-image-container">
@@ -190,10 +216,10 @@
                 </div>
                 <div class="gallery-image-container">
                     <img src="./Images/Gallery-images/gallery-image-8.png" class="gallery-image" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
-        <button id="gallery_button" class="button secondary-button">See More <img src="./Images/icons/Arrow-right.png" class="button-arrow-icon" alt="right-arrow"></button>
+        <button id="gallery_button" class="button secondary-button">See More <i class="fa-solid fa-arrow-right"></i></button>
 
     </section>
 
@@ -273,7 +299,7 @@
                     <div class="address-container contact-container-item">
                         <a class="company-information-item" target="_blank" href="https://www.google.com/maps/place/19%C2%B015'31.6%22N+72%C2%B051'47.5%22E/@19.258786,72.863188,17z/data=!3m1!4b1!4m4!3m3!8m2!3d19.258786!4d72.863188">
                             <div class="contact-icon-container">
-                                <img src="./Images/icons/Location-icon.png" alt="">
+                                <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div class="address-text">
                                 <p>CS link road, Anand Nagar, Dahisar east.</p>
@@ -283,7 +309,7 @@
                     <div class="email-container contact-container-item">
                         <a href="mailto:mayank@testgmail.com" class="company-information-item">
                             <div class="contact-icon-container">
-                                <img src="./Images/icons/Mail-icon.png" alt="">
+                                <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div class="email-text">
                                 <p>mayank@gmail.com</p>
@@ -293,7 +319,7 @@
                     <div class="phone-container contact-container-item">
                         <a href="tel:+91 8693891336" class="contact-container-item">
                             <div class="contact-icon-container">
-                                <img src="./Images/icons/Phone-icon.png" alt="">
+                                <i class="fa-solid fa-phone"></i>
                             </div>
                             <div class="phone-text">
                                 <p>+91 86938 91336</p>
@@ -304,6 +330,9 @@
             </div>
         </div>
     </section>
+
+    <button onclick="topFunction()" id="Scroll_to_top" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
 
 
     <!-- FOOTER -->
@@ -318,7 +347,7 @@
                         <div class="company-information-item">
                             <a class="company-information-item" href="https://www.google.com/maps/place/19%C2%B015'31.6%22N+72%C2%B051'47.5%22E/@19.258786,72.863188,17z/data=!3m1!4b1!4m4!3m3!8m2!3d19.258786!4d72.863188">
                                 <div class="item-icon-container">
-                                    <img src="./Images/icons/Location-icon-white.png" alt="">
+                                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
                                 </div>
                                 <div class="address-text">
                                     <p>CS link road, Anand Nagar, Dahisar east.</p>
@@ -328,7 +357,7 @@
                         <div class="company-information-item">
                             <a href="mailto:mayank@testgmail.com" class="company-information-item">
                                 <div class="item-icon-container">
-                                    <img src="./Images/icons/Mail-icon-white.png" alt="">
+                                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                                 </div>
                                 <div class="email-text">
                                     <p>mayank@gmail.com</p>
@@ -338,7 +367,7 @@
                         <div class="company-information-item">
                             <a href="tel:+91 8693891336" class="company-information-item">
                                 <div class="item-icon-container">
-                                    <img src="./Images/icons/Phone-icon-white.png" alt="">
+                                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                                 </div>
                                 <div class="phone-text">
                                     <p>+91 86938 91336</p>

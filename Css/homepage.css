@@ -1,5 +1,6 @@
 @import url(../root.css);
 
+
 /* HOMEPAGE STYLES */
 .hero-section{
     display: flex;
@@ -120,7 +121,7 @@
     align-items: start;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: var(--margin-24px);
+    margin-top: var(--margin-24px);   
 }
 
 .our-service-card{
@@ -132,17 +133,31 @@
     background-color: var(--neutral-100);
     border-radius: var(--border-radius-16px);
     margin-block: var(--margin-16px);
+    transition: all 0.3s ease;
+    border: 0.5px solid transparent;
+    min-height: 260px;
+    max-height: 100%;
 }
 
 .icon-container{
     width: 76px;
     height: 76px;
     border-radius: var(--border-radius-50);
-    background-color: var(--primary-50);
+    /* background-color: var(--primary-50); */
+    border: 1px solid var(--primary-50);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: var(--margin-24px);
+}
+
+.our-service-card:hover{
+    box-shadow: 0 0 15px 1px var(--neutral-100);
+    border-color: var(--neutral-200);
+}
+
+.our-service-card:hover .icon-container{
+    background-color: var(--primary-50);
 }
 
 .our-service-header{
@@ -201,6 +216,29 @@
 
 .gallery-section button{
     margin-inline: auto;
+}
+
+/* OUR CLIENTS  */
+
+.our-clients-section{
+    text-align: center;
+}
+
+.client-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 16px;
+
+}
+
+.client-image-container{
+    width: 90px;
+    height: auto;
+}
+
+.client-image{
+    width: 100%;
 }
 
 
@@ -422,7 +460,7 @@
 }
 
 /* MOBILE */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .max-width-container{
         margin: 0 24px;
@@ -444,15 +482,12 @@
         margin-bottom: var(--margin-8px);
     }
 
-
-
     .our-service-card {
         margin-right: 0;
         margin-top: var(--margin-8px);
         width: 100%;
     }
 
-    
 
     .gallery-photo-row .gallery-image-container {
         width: 100%;
