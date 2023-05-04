@@ -49,6 +49,10 @@
     color: var(--neutral-200);
 }
 
+.hero-cta a{
+    color: var(--neutral-50);
+}
+
 /* ABOUT US SECTION */
 
 

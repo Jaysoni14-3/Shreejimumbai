@@ -62,7 +62,8 @@ for(let i = 0; i < products.length; i++){
                                         <img src="../Images/icons/Rupee-icon.png" class="ruppee-icon" alt="ruppee-icon">
                                         <p>${productPrice}</p>
                                     </div>
-                                    <button class="primary-button">Call us <img src="../Images/icons/Phone-icon-white.png" alt="phone-icon"></button>
+                                    
+                                    <a href="tel:+91 8693891336" class="button primary-button">Call us <img src="../Images/icons/Phone-icon-white.png" alt="phone-icon"></a>
                                 </div>
                             </div> `;
         
@@ -70,3 +71,6 @@ for(let i = 0; i < products.length; i++){
     // console.log(productCardHTML)
     productWrapper.innerHTML += productCardHTML;
 }
+
+
+{/* <button class="primary-button">Call us <img src="../Images/icons/Phone-icon-white.png" alt="phone-icon"></button> */}

@@ -278,6 +278,14 @@ section .section-body{
     margin-right: var(--margin-16px);
 }
 
+.company-information-item .item-icon-container:first-child{
+    min-width: 24px;
+}
+
+.company-information-item a{
+    color: var(--neutral-50);
+}
+
 .footer-links{
     display: flex;
     justify-content: center;
