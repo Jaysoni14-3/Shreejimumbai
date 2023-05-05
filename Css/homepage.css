@@ -357,6 +357,10 @@
     align-items: center;
 }
 
+.contact-container{
+    width: 80%;
+}
+
 .contact-container-item{
     display: flex;
     margin-bottom: var(--margin-24px);

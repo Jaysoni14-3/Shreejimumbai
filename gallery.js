@@ -27,6 +27,10 @@ var gallery_images = [
         img_id: "gallery-image-7",
         img_src: "../Images/Gallery-images/gallery-image-7.png"
     },
+    {
+        img_id: "gallery-image-8",
+        img_src: "../Images/Gallery-images/gallery-image-8.jpeg"
+    },
 ];
 
 for(var i = 0; i < gallery_images.length; i++){

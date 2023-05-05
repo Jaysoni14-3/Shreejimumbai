@@ -39,6 +39,12 @@ var products = [
         product_name: "Acrylic pipeline filter 15 lph for Fi Literation",
         product_price: "75,000/ piece",
     },
+    {
+        product_image: "../Images/Product-images/Product-image-10.jpg",
+        product_name: "Pool Pump",
+        product_price: "1 million/ piece",
+        // hasLink: "https://www.amazon.in/dp/B0BLW9VJBK?ref=myi_title_dp",
+    },
 ];
 
 
@@ -49,8 +55,9 @@ for(let i = 0; i < products.length; i++){
     var productImage = products[i].product_image;
     var productPrice = products[i].product_price;
     var productName = products[i].product_name;
+    // var productLink = products[i].hasLink;
 
-    var productCardHTML = `<div class="product-card">
+    var productCardHTML = ` <div class="product-card">
                                 <div class="product-image mb-8">
                                     <img src=${productImage} alt="">
                                 </div>
@@ -58,15 +65,16 @@ for(let i = 0; i < products.length; i++){
                                     <div class="product-name mb-8">
                                         <h4>${productName}</h4>
                                     </div>
-                                  
-                                    
-                                    <a href="tel:+91 8693891336" class="button primary-button">Call us <i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
+                                   
+                                    <a href="tel:+91 9004374468" class="button primary-button">Call us <i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
                                 </div>
-                            </div> `;
+                            </div>  `;
         
         
-    // console.log(productCardHTML)
-    productWrapper.innerHTML += productCardHTML;
+        // console.log(productCardHTML)
+        productWrapper.innerHTML += productCardHTML;
+
+   
 }
 
 
@@ -76,3 +84,18 @@ for(let i = 0; i < products.length; i++){
 <img src="../Images/icons/Rupee-icon.png" class="ruppee-icon" alt="ruppee-icon">
 <p>${productPrice}</p>
 </div> */}
+
+
+
+// <div>
+// <button class="button primary-button" id="has_link_btn">
+//    <a href="${productLink}" target="_blank"> Amazon </a>
+// </button>
+// </div>
+
+
+// var linkBtn = document.querySelector("#has_link_btn");
+// linkBtn.addEventListener("click", function(){
+//     location.href = "https://www.amazon.in/dp/B0BLW9VJBK?ref=myi_title_dp"
+//     alert("hELLO");
+// });
