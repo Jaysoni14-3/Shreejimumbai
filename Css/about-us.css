@@ -151,21 +151,30 @@
     border-radius: var(--border-radius-8px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center;  */
     align-items: center;
 }
 
+.member-card .image-container{
+    min-height: 300px;
+    max-height: 300px;
+    width: 100%;
+}
 
 .member-card .image-container .member-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-top-right-radius: var(--border-radius-8px);
     border-top-left-radius: var(--border-radius-8px);
 }
 
 .details-container{
-    padding: 8px 16px;
+    padding: 16px;
     width: 100%;
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
 }
@@ -189,6 +198,7 @@
 }
 
 .social-links-container .icon-container{
+    /* cursor: pointer; */
     width: 48px;
     height: 48px;
     display: flex;

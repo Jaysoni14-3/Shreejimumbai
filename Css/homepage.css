@@ -12,7 +12,7 @@
 .hero-image-container{
     position: absolute;
     inset: 0;
-    background: url(../Images/Hero-image.png);
+    background: url(../Images/LRM_EXPORT_20230609_165013.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +25,7 @@
     z-index: 10; */
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0));
 }
 
 
@@ -48,6 +48,11 @@
 
 .hero-text-container .hero-text-body{
     color: var(--neutral-200);
+}
+
+.hero-text-body p{
+    font-size: 18px;
+    color: var(--neutral-300);
 }
 
 .hero-cta a{
@@ -220,6 +225,10 @@
 
 /* OUR CLIENTS  */
 
+.our-clients{
+    background-color: var(--white);
+}
+
 .our-clients-section{
     text-align: center;
 }
@@ -233,7 +242,7 @@
 }
 
 .client-image-container{
-    width: 90px;
+    width: 160px;
     height: auto;
 }
 

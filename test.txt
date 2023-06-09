@@ -56,3 +56,17 @@ Shop No 2, Shree Giriraj CHS, Anand Nagar, Near Rajendra Complex, Dahisar (East)
 
 SHREEJI INSTAGRAM ID
 https://instagram.com/shreejimumbai?igshid=YmMyMTA2M2Y=
+
+
+
+
+
+GIT COMMANDS 
+
+git init
+
+git add .
+
+git commit -m "changes"
+
+git push
